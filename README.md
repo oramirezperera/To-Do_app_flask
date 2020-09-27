@@ -45,3 +45,9 @@ In flask the modules are like blueprints, for example auth module will be log in
 
 We are protecting the routes and endpoints via the login_required() function. This is a decorator function.
 With load_logged_in_user puts the user in g, this function checks if the user is registered and if not, sends you to the register page.
+
+## index.html
+
+<strike> atribute puts a line in the center of the characters
+using .strftime gives format to the timestamps %Y for the year, %m for the month and the %d for the day.
+loop give us access to the iterations we are doing, loop.last checksout if it is the last iteration.

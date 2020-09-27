@@ -63,7 +63,7 @@ def login():
         if error is None:
             session.clear()
             session['user_id'] = user['id']
-            return redirect(url_for('index'))
+            return redirect(url_for('todo.index'))
 
         flash(error)
 
@@ -94,3 +94,9 @@ def login_required(view):
         return view(**kwargs)
     
     return wrapped_view
+
+
+@bp.route('/logout')
+def logout():
+    session.clear()
+    return redirect(url_for('login'))
