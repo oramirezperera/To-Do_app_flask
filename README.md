@@ -45,10 +45,16 @@ In flask the modules are like blueprints, for example auth module will be log in
 
 We are protecting the routes and endpoints via the login_required() function. This is a decorator function.
 With load_logged_in_user puts the user in g, this function checks if the user is registered and if not, sends you to the register page.
-<int: id> tells flask that you are passing an interger
+<int: id> tells flask that you are passing an integer
 
 ## index.html
 
 <strike> attribute puts a line in the center of the characters
 using .strftime gives format to the timestamps %Y for the year, %m for the month and the %d for the day.
-loop give us access to the iterations we are doing, loop.last checksout if it is the last iteration.
+loop give us access to the iterations we are doing, loop.last checks out if it is the last iteration.
+
+## update.html
+
+In the input description we need the value we ask for the value with request.form['description'] and if the description is empty the todo['description'] is used
+We are going to use a checkbox for the completed input, we are going to use an if statement, we compare the todo['completed'] to 1, we used False to make the insertion in the database, but MySQL change it to 0 or 1.
+We start to create the delete function here, and use the JavaScript function onclick and return confirm to confirm the action.
