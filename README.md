@@ -45,7 +45,10 @@ In flask the modules are like blueprints, for example auth module will be log in
 
 We are protecting the routes and endpoints via the login_required() function. This is a decorator function.
 With load_logged_in_user puts the user in g, this function checks if the user is registered and if not, sends you to the register page.
-<int: id> tells flask that you are passing an integer
+<int:id> tells flask that you are passing an integer
+to do the update we are creating a function get_todo so we can get it outside the update function.
+You can split the SQL calls in two rows by placing an enter where I want to split and get sure that the two rows between single quotation marks.
+request.form.get('completed') is a special syntax we use when we are using checkboxes, the return of a checkbox is on.
 
 ## index.html
 
@@ -58,3 +61,4 @@ loop give us access to the iterations we are doing, loop.last checks out if it i
 In the input description we need the value we ask for the value with request.form['description'] and if the description is empty the todo['description'] is used
 We are going to use a checkbox for the completed input, we are going to use an if statement, we compare the todo['completed'] to 1, we used False to make the insertion in the database, but MySQL change it to 0 or 1.
 We start to create the delete function here, and use the JavaScript function onclick and return confirm to confirm the action.
+
