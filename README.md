@@ -52,7 +52,7 @@ request.form.get('completed') is a special syntax we use when we are using check
 
 ## index.html
 
-<strike></strike> attribute puts a line in the center of the characters
+<'strike'><'/strike'> attribute puts a line in the center of the characters. You have to use it whitout the ''.
 using .strftime gives format to the timestamps %Y for the year, %m for the month and the %d for the day.
 loop give us access to the iterations we are doing, loop.last checks out if it is the last iteration.
 
